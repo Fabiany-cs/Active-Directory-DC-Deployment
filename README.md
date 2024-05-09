@@ -200,3 +200,46 @@
   <img width="782" alt="53" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/bc17d85c-5f09-4a60-8fe0-07e556b83a91">
 </ol>
 
+
+
+<h2>Setting up DHCP</h2>
+<ol>
+    <li>
+        Go back to the top right of Server Manager and select Tools then DHCP
+        <ol>
+            <li>Select the routable NIC-Internet (NOT THE INTRANET)</li>
+            <li>Add the feature</li>
+            <li>Select DHCP Server and install</li>
+        </ol>
+    </li>
+  <img width="782" alt="54" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/34b3c4c4-eae8-48e6-8458-708e21da67c2">
+  <img width="782" alt="55" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/0f55e6a8-661f-43ff-a401-277df006b710">
+  <img width="782" alt="56" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/affbb816-9bac-4d0b-abd2-002c6f7bcfe3">
+  <img width="782" alt="57" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/5a2d7d34-2209-467f-8d7f-ca76d87f326b">
+  <img width="782" alt="58" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/9902a227-6f17-42b7-b2cb-89d7f85433c2">
+</ol>
+
+
+
+<h2>Adding a DHCP Scope</h2>
+<ol>
+        <li>Right-click on DHCP IPv4 and add a new scope</li>
+        <li>Name the scope (I named it the scope range)</li>
+        <li>I assigned a 100 IP address (172.16.0.100-200)</li>
+        <li>Subnet /24 (255.255.255.0)</li>
+        <li>Add the Default Gateway (router) 172.16.0.1</li>
+        <li>Finish Install and right-click on DHCP and authorize the configuration then refresh.</li>
+        <li>You will see both IPv4 and IPv6 DHCP servers with a green mark. (Green means good lol)</li>
+  <img width="782" alt="59" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/ca5cc6e4-f694-463d-b2b6-a9b2dbd83a64">
+  <img width="782" alt="60" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/68366176-e360-462a-9a4a-31e5f5ae44d6">
+  <img width="782" alt="61" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/e4692e61-91aa-4c26-83c3-5ed7a4873415">
+  <img width="782" alt="62" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/6bcc41ac-13fe-448f-9863-9ea7f98cf675">
+  <img width="782" alt="63" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/bfef9843-1374-43af-94b6-de6d33d9fca5">
+  <img width="782" alt="64" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/82dc1ae2-69ec-4523-a0a4-231f89775369">
+  <img width="782" alt="65" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/0d959786-a648-498f-bdb3-3bdb2161f1f8">
+  <img width="782" alt="66" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/fe6a980c-361d-4e21-a09f-bc47a878afb7">
+  <img width="782" alt="67" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/636afb2e-a6f6-4ccd-9a9c-57b8762447e4">
+</ol>
+
+
+

@@ -16,5 +16,62 @@
     <li><strong>Windows Server 2019 ISO Download: </strong> Obtain the Windows Server 2019 ISO file from official sources to initiate the deployment process.</li>
   </ul>
 
+  <h1>Overview Architecture:</h1>
+    <img width="1032" alt="Architecture Image" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/5f8873cd-5235-4eba-88e3-3e78dad5a19a">
+
+
 <hr>
+
+<h1>Steps:</h1>
+
+<h2>Downloading Windows ISO Files for VM</h2>
+<ol>
+    <li>
+        <strong>Download Windows Server 2019 ISO:</strong>
+        <ul>
+            <li>Go to <a href="https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019">Windows Server 2019 Download Page</a> and download the Windows Server 2019 ISO file.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Download Windows 10 ISO:</strong>
+        <ul>
+            <li>Go to <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">Windows 10 Download Page</a> and download the Windows 10 ISO file.</li>
+        </ul>
+    </li>
+</ol>
+
+<h2>Downloading Oracle VirtualBox</h2>
+<ol>
+    <li>
+        <strong>Download VirtualBox:</strong>
+        <ul>
+            <li>Go to <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox Download Page</a> and download the VirtualBox Platform Package corresponding to your local machine.</li>
+        </ul>
+    </li>
+</ol>
+
+<h2>Setting Up DC VM</h2>
+<ol>
+    <li>
+        <strong>Create a New VM:</strong>
+        <ul>
+            <li>Add the Windows Server 2019 ISO file to the VM.</li>
+            <li>Allocate appropriate CPU cores and memory.</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Network Options:</strong>
+        <ul>
+            <li>Add 2 NICs to the VM:
+                <ul>
+                    <li>1 External for internet access.</li>
+                    <li>1 Internal for communication within Active Directory.</li>
+                </ul>
+            </li>
+        </ul>
+      <img width="1018" alt="3" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/a2f006ca-44a6-472c-a8b8-183597b14318">
+      <img width="743" alt="4" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/a920983b-8d7f-42d7-8688-ec5aecc092e3">
+      <img width="744" alt="5" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/72ae143b-7223-4f7d-98c7-f1a160c9d30b">
+    </li>
+</ol>
 

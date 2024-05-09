@@ -241,5 +241,71 @@
   <img width="782" alt="67" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/636afb2e-a6f6-4ccd-9a9c-57b8762447e4">
 </ol>
 
+<h2>Creating 1,000 Users with PowerShell Script</h2>
+<ol>
+    <li>Open PowerShell ISE as Administrator</li>
+    <li>Download the 1_CREATE_USERS.ps1 and names.txt from my repository:
+        <ul>
+            <li><a href="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/blob/main/1_CREATE_USERS.ps1">1_CREATE_USERS.ps1</a></li>
+            <li><a href="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/blob/main/names.txt">names.txt</a></li>
+        </ul>
+    </li>
+    <li>Open the PowerShell script within PowerShell ISE</li>
+    <li>Run the command: <code>Set-ExecutionPolicy Unrestricted</code></li>
+    <li>Accept Yes to all</li>
+    <li>Change the directory within the terminal to where you have downloaded the files (cd)</li>
+    <li>Press the Green Run button</li>
+    <li>Select Run Once</li>
+    <li>See all of the users being created within AD</li>
+    <li>Open Active Directory Users and Computers (ADUC) and refresh the _USERS OU to see all the users populate</li>
+  <img width="782" alt="71" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/55e22fc8-18f1-49b5-ac19-b4e8fc3cdb58">
+  <img width="782" alt="72" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/4694adb2-616a-4226-945d-ba0a654c1599">
+  <img width="782" alt="73" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/2a932be3-55aa-4e42-a600-2f8146f2d0b3">
+  <img width="782" alt="74" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/49aaaca3-b16c-4ced-a342-0bfdeedeb73a">
+  <img width="782" alt="76" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/291db94b-881f-4b24-819b-dfb44a9ddd79">
+  <img width="782" alt="77" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/f9bb2155-6357-4469-be2e-a9e51389250f">
+  <img width="782" alt="78" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/39fab3c4-97bf-47ba-bdb5-633d2341caff">
+  <img width="782" alt="79" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/7ff75cf2-8f6b-464a-87bb-ba5967248c3e">
+  <img width="782" alt="80" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/e77995a7-ee25-4432-b95a-c05bc37ca4b8">
+</ol>
+
+
+
+<h2>Create Another VM with the Windows 10 ISO File</h2>
+<ol>
+    <li>
+        Set the network adapter to internal only (Cannot have internet connectivity)
+        <li>When installing, select Windows 10 Pro since we will be connecting it to the DC</li>
+        <li>Select "I do not have internet" and create the account</li>
+    </li>
+  <img width="745" alt="82" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/00026c80-1947-4b7c-b712-7fd6ba84ca84">
+  <img width="735" alt="83" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/2f15566d-2b27-4861-a46c-631537d8a99d">
+  <img width="511" alt="85" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/04804624-67ba-4add-b99d-4f7af283f7bf">
+  <img width="782" alt="87" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/31904915-b001-41f1-8b3e-c4683a8906a9">
+  <img width="782" alt="89" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/ec148e99-745e-4bc8-adf1-3a603403f7d8">
+</ol>
+
+
+<h2>Reviewing DHCP IPv4 Address Leases and ADUC</h2>
+<ol>
+    <li>
+        Go back to the DC VM and go to DHCP settings within Server Manager
+        <ol>
+            <li>Go to IPv4 > Scope > Address Leases and you can see the machine that was just added to the domain</li>
+        </ol>
+    </li>
+    <li>
+        Open Active Directory Users and Computers (ADUC) and go to Computers
+        <ol>
+            <li>You can see the newly added client as well</li>
+        </ol>
+    </li>
+  <img width="529" alt="Screenshot 2024-05-09 at 3 23 47 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/76947b37-f72d-4064-8f69-faed72ce95a2">
+  <img width="271" alt="Screenshot 2024-05-09 at 3 24 49 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/6077ca55-39ec-4df0-a8e6-0c6670253678">
+  <img width="350" alt="Screenshot 2024-05-09 at 3 25 59 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/e1d449c2-98d9-458f-8b7c-7b0358ed3552">
+  <img width="197" alt="Screenshot 2024-05-09 at 3 26 14 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/9c517fbf-a476-478c-b167-fe00109107e8">
+  <img width="337" alt="Screenshot 2024-05-09 at 3 28 56 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/55b7d752-aec9-46d0-8b0a-1187a10053b2">
+  <img width="498" alt="Screenshot 2024-05-09 at 3 29 59 PM" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/e03fad16-8c5d-4de0-922c-00d611543e03">
+</ol>
 
 

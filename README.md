@@ -85,3 +85,15 @@
 </ol>
 
 
+<h2>Identifying and Setting up both NICs within Windows</h2>
+<ol>
+  <li>Go to Network Configurations to identify the NAT NIC and the Internal NIC.</li>
+    <li>By going to properties, you can see which NIC has a private IP address and which has only an Automatic Private IP Addressing (APIPA) (169.254.x.x) </li>
+  <li>Rename the NICs accordingly based on your identification.</li>
+  <img width="782" alt="11" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/91109c1b-c376-404e-9b99-1efa3f69bc20">
+  <img width="782" alt="12" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/63cc90be-5446-493d-8dee-fca3483325c0">
+  <img width="782" alt="13" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/0791fecd-457c-427a-a67d-7c26b53269b8">
+</ol>
+
+
+

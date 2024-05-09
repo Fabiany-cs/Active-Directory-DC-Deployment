@@ -96,4 +96,12 @@
 </ol>
 
 
+<h2>Setting Up Internal NIC</h1>
+    <ol>
+        <li>Assign the static IP address for the Internal NIC</li>
+        <li>When you install Active Directory, DNS is automatically set up so we will assign the DNS server with the loopback address. (127.0.0.1)</li>
+        <img width="782" alt="14" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/609eb735-b34f-4aa6-85d7-814ad48066fe">
+        <img width="782" alt="15" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/b37bc67e-79a2-4b93-a121-ba370cf1a396">
+    </ol>
+
 

@@ -75,3 +75,13 @@
     </li>
 </ol>
 
+
+<h2>Launching the VM Instance and Creating Admin Login Information</h2>
+<ol>
+  <li>Follow the on-screen instructions to configure the initial setup of the virtual machine.</li>
+  <li>Create your administrative login information (username and password) when prompted.</li>
+  <img width="508" alt="7" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/6c35787a-934a-498a-80d8-34e49378cfa0">
+  <img width="505" alt="8" src="https://github.com/Fabiany-cs/Active-Directory-DC-Setup/assets/107880960/0ab327a9-8bd3-4f4e-a208-a0f17d4f159b">
+</ol>
+
+
